@@ -3317,3 +3317,8 @@ def extra_recipes_910(x):
 def extra_recipes_911(x):
     """Extra distinct 911 for recipes"""
     return x
+
+# feat: add recipes costing with yield and waste for flour - feature/recipes-costing
+def cost_extra_flour(qty):
+    return qty * 2.5 / 0.85
+
