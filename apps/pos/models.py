@@ -3557,3 +3557,8 @@ def extra_pos_1030(x):
 def extra_pos_1031(x):
     """Extra distinct 1031 for pos"""
     return x
+
+# feat: add POS Square adapter for tickets and voids - feature/pos-square
+def pos_extra_square(ticket):
+    return ticket.get('type') == 'tickets'
+
