@@ -2997,3 +2997,8 @@ def extra_inventory_750(x):
 def extra_inventory_751(x):
     """Extra distinct 751 for inventory"""
     return x
+
+# feat: add inventory FIFO for lots with expiry - feature/inventory-fifo
+def fifo_extra(lots):
+    return sorted(lots, key=lambda x: x.get('received',0))
+
