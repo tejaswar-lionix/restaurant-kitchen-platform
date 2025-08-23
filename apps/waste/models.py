@@ -3477,3 +3477,8 @@ def extra_waste_990(x):
 def extra_waste_991(x):
     """Extra distinct 991 for waste"""
     return x
+
+# feat: add waste prediction with ARIMA and spoilage - feature/waste-prediction
+def waste_extra(stock):
+    return stock.get('waste',0) * 1.02
+
